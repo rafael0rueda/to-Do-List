@@ -1,14 +1,74 @@
+:root {
+  --ecru: #bfb48fff;
+  --wenge: #564e58ff;
+  --cordovan: #904e55ff;
+  --rosy-brown: #c19f9fff;
+  --isabelline: #f2efe9ff;
+  --eerie-black: #252627ff;
+}
+
+.leckerli-one-regular {
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+  background-color: var(--isabelline);
+  color: var(--eerie-black);
 }
 
 h1 {
   font-size: 6rem;
   text-align: center;
-  background-color: blue;
+  background-color: var(--cordovan);
+  color: var(--isabelline);
+  font-family: "Leckerli One", cursive;
 }
 
 #task-form {
-  padding: 20px;
+  padding: 30px;
+}
+
+#new-task {
+  font-size: 25px;
+  padding: 5px 10px;
+  border: solid;
+  border-radius: 5px;
+  color: var(--rosy-brown);
+  margin-right: 5px;
+  outline: var(--wenge);
+}
+
+#button-list {
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--cordovan);
+  background-color: var(--rosy-brown);
+  border: none;
+}
+
+#button-list:hover {
+  color: var(--rosy-brown);
+  background-color: var(--cordovan);
+}
+
+ul {
+  padding: 10px 50px;
+  font-size: 30px;
+  list-style: none;
+}
+
+li {
+  width: fit-content;
+  background-color: var(--rosy-brown);
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+li:hover {
+  background-color: var(--cordovan);
 }
