@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <form action="" id="loginForm">
-      <h1>Login</h1>
-      <input
+    <h1>Task List</h1>
+    <div id="task-form">
+        <input
         type="text"
-        id="username"
-        class="form-control"
-        placeholder="Enter your Username..."
+        id="new-task"
+        name="newTask"
+        placeholder="Enter new task..."
       />
-      <input
-        type="password"
-        id="password"
-        class="form-control"
-        placeholder="Enter your Password..."
-      />
-      <button type="submit">Submit</button>
-    </form>
+      <button id="button-list">Add</button>
+    </div>
+
+    <ul id="list-task"></ul>
   </body>
   <script type="module" src="index.js"></script>
 </html>
